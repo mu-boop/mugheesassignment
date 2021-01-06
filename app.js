@@ -718,92 +718,162 @@
 //     alert("Good Night");
 // }
 
-// Chapter-14-16 
+
+// Chapter # 14-16
+
+// Question 1
+
+// var student = ["Ali" , "bilal" , "mughees"];
+
+// Question 2
+
+// var fruits = new Array( "apple", "orange", "mango" );
+
+// Question 3
+
+// var arrName = ["Ali" , "bilal" , "mughees"];
+
+// Question 4
+
+// var arrNumber = [ 1 , 2 , 3 , 4];
+
+// Question 5
+
+// var arrBoolean = [true , false];
+
+// Question 6
+
+// var arrMixed = [true  + "Bilal" + 1];
+
+// Question 7
+
+// var qualification = ["SSC" , "HSC" , "BCS" , "BCOM" , "BS", "MS" , "M.PHil" , "PhD"];
+
+// document.write("<h1>" + "Qualifications" + "<h1/>" + "<br />");
+// document.write( "1) " + qualification[0] + "<br />");
+// document.write( "2) " + qualification[1] + "<br />");
+// document.write( "3) " + qualification[2] + "<br />");
+// document.write( "4) " + qualification[3] + "<br />");
+// document.write( "5) " + qualification[4] + "<br />");
+// document.write( "6) " + qualification[5] + "<br />");
+// document.write( "7) " + qualification[6] + "<br />");
+// document.write( "8) " + qualification[7 ] + "<br />");
+
+// Question 8
 
 
-// Q-1
+// var arrName = ["Ali" , "bilal" , "mughees"];
+// var arrScore = [380 , 450 , 230];
+
+// var total = 500;
+
+// document.write("<h1>" + "Score of " + arrName[0] + " is " + arrScore[0] + "." + " Percentage: " + (arrScore[0]/total)*100 + " %" + "<h1 />");
+// document.write("<h1>" + "Score of " + arrName[1] + " is " + arrScore[1] + "." + " Percentage: " + (arrScore[1]/total)*100 + " %" + "<h1 />");
+// document.write("<h1>" + "Score of " + arrName[2] + " is " + arrScore[2] + "." + " Percentage: " + (arrScore[2]/total)*100 + " %" + "<h1 />");
+
+// Question 9
+
+// var color=["red","green","yellow","brown"];
+// document.write(color.join(" ") + "<br />");
 
 
-// var array = [];
+// var ask1stColor=prompt("Enter color name what you want to add in beginning");
 
-// // Q-2
-
-// var array = [""];
-
-// // Q-3
-
-// var name = ["mughees", "hamid", "shahbaz", "bilal"];
-
-// // Q-4
-
-// var numb = [16, 25, 37, 25];
-
-// // Q-5
-
-// var collect = ["true", "false"];
-
-// // Q-6
-
-// var micus = ["shahbaz", 18, true];
-
-// Q-7
-
-// var qulification = [ "SSC","HSC","BCS","BS","BCOM","MS","M.Phil","PhD"];
-
-// document.write("<h1>Qulification</h1>")
-// document.write(qulification [0] + "<br>");
-// document.write(qulification [1] + "<br>");
-// document.write(qulification [2] + "<br>");
-// document.write(qulification [3] + "<br>");
-// document.write(qulification [4] + "<br>");
-// document.write(qulification [5] + "<br>");
-// document.write(qulification [6] + "<br>");
-// document.write(qulification [7] + "<br>");
-
-// Q-8
-
-// var studentName = ["mughees" , "junaid" , "hamid"];
-// var studentMarks = ["80" , "20" , "30"];
-
-// document.write("Score of" + " " + studentName[0] + " " + "is" + " " + studentMarks[0] + " " + "Percentage:" + (studentScore[0] * 100 / 500) + "%" + "<br>");
-// document.write("Score of" + " " + studentName[1] + " " + "is" + " " + studentMarks[1] + " " + "Percentage:" + (studentScore[1] * 100 / 500) + "%"  + "<br>");
-// document.write("Score of" + " " + studentName[2] + " " + "is" + " " + studentMarks[2] + " " + "Percentage:" + (studentScore[2] * 100 / 500) + "%"  + "<br>");
-
-// Q-9
+// // (a)
+// color.unshift(ask1stColor);
+// document.write("The color added is " + ask1stColor + "<br >");
+// document.write(color.join(" " ) + "<br />");
 
 
-// Q-10
+// // (b)
+// var ask2ndColor=prompt("Enter color name what you want to add in ending");
+// color.push(ask2ndColor);
+// document.write("The color added is " + ask1stColor + "<br >");
+// document.write(color.join(" " ) + "<br />");
 
-// var score =["321" , "230" , "480" , "120"];
 
-// document.write("Stores of Students" + " " + score + "<br>");
-// document.write("Ordered Stores of Students" + " " + score[3] + "," + score[1] + "," + score[0] + "," + score[2]);
+// (c)
+
+// var ask3rdColor=prompt("Enter color");
+// var ask4thColor=prompt("Enter color");
+
+// color.unshift(ask3rdColor,ask4thColor);
+// document.write("The color added is " + ask3rdColor + ask4thColor+ "<br >");
+// document.write(color.join(" " ) + "<br />");
 
 
-// Q-11
+// (d)
+
+// document.write("The color deleted is " + color[0] +   "<br >");
+// color.shift();
+// document.write(color.join(" " ) + "<br />");
+
+// (e)
+
+
+// document.write("The color deleted is " + color[3] +   "<br >");
+// color.pop();
+// document.write(color.join(" " ) + "<br />");
+
+
+// (f)
+
+// var askIndex=prompt("Enter index");
+// var askColor=prompt("Enter Color");
+
+// color.splice(askIndex,0,askColor);
+// document.write("The color added is " +askColor+ "<br >");
+// document.write(color.join(" " ) + "<br />");
+
+
+// (e)
+
+// var askIndex=prompt("Enter index");
+// var askRange=prompt("Enter Range");
+
+// color.splice(askIndex,askRange);
+// document.write(color.join(" " ) + "<br />");
+
+
+
+// Question 10
+
+// var score =[321 , 230 , 480 , 120];
+
+// document.write("<h1>Score:</h1>");
+// document.write("Scores of Students" + " " + score.join(" ") + "<br>");
+
+// document.write("<h1>String:</h1>");
+// document.write(score.sort().join(" "));
+
+
+// Question 11
 
 // var cities =["Karachi" , "Faisalabad" , "Islamabad" , "Multan"];
 
 // document.write("Cities List" + "<br>"  + cities + "<br>");
 // document.write("Selected Cities List" + "<br>"  + cities[3] + "," + cities[1] + ",");
 
-// Q-12
+// Question 12
 
 // var arr =["this" , "is" , "my" , "cat"];
 
 // document.write("Array:" + "<br>" + " " + arr + "<br>");
-// document.write("Strings:" + "<br>"   + arr[0] + " " + arr[1] + " " + arr[2] + " " + arr[3]);
-
+// document.write("Strings:" + "<br>"   + arr.join(" "));
 //  Q-13
 
 // var arr =["keyboard" , "mouse" , "printer" , "monitor"];
 
 // document.write("Devices:" + "<br>" + " " + arr + "<br><br><br>");
-// document.write("Out:" + "<br>" + arr[0] + "<br>" + "Out:" + "<br>" +  arr[1] +  "<br>" + "Out:" + "<br>"  + arr[2] +   "<br>" + "Out:" + "<br>"  + arr[3]);
+// // document.write("Out:" + "<br>" + arr[0] + "<br>" + "Out:" + "<br>" +  arr[1] +  "<br>" + "Out:" + "<br>"  + arr[2] +   "<br>" + "Out:" + "<br>"  + arr[3]);
 
+//  document.write(arr) 
 // Q-14
 
+// var arr =["keyboard" , "mouse" , "printer" , "monitor"];
 
+// document.write("Devices:" + "<br>" + " " + arr + "<br><br><br>");
+// document.write("Out:" + "<br>" + arr[3] + "<br>" + "Out:" + "<br>" +  arr[2] +  "<br>" + "Out:" + "<br>"  + arr[1] +   "<br>" + "Out:" + "<br>"  + arr[0]);
 
 // Q-15
 
@@ -811,6 +881,36 @@
 
 
 // document.write("<select>" + "<option>" + arr[0] + "</option>" + "<option>" + arr[1] + "</option>" + "<option>" + arr[2] + "</option>" + "<option>" + arr[3] + "</option>" + "<option>" + arr[4] + "</option>" + "<option>" + arr[5] + "</option>" + "</select>");
+
+// Chapter-17-20
+
+//Q-1
+// var arr=[];
+// arr=[[],[],[]];
+// 
+
+//Q-2
+
+// var arr=[[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+// for(var i=0; i < arr.length; i++){
+//                document.write(arr[i].join(" ") + "<br />");
+
+//Q-3
+
+// var num=[1,2,3,4,5,6,7,8,9,10];
+// for(i=0 ;i < num.length; i++){
+//                document.write(i + "<br />);
+}
+
+// Q-4
+
+// var numb=prompt("Enter your number);
+// var range=prompt("Enter your range");
+// for(i=1; i<= range; i++){
+//             document.write(numb + "x" + i + "=" +(numb*i) + "<br />");
+}
+
+
 
 
 
